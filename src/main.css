@@ -14,12 +14,9 @@
   background-color: #ccc;
 }
 
-.cell.has-item {
-  background-color: yellow;
-}
-
 .cell.clicked {
   background-color: #ffffff;
+  font-size: 40px;
 }
 
 .attempts-counter{

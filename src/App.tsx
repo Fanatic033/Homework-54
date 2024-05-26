@@ -19,6 +19,7 @@ const App: React.FC = () => {
     };
   return (
     <>
+      <h1>Найди собачку</h1>
       <Board items={items} onCellClick={UserClick}/>
       <AttemptsCounter attempts={attempts} />
     </>

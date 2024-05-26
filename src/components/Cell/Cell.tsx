@@ -8,11 +8,17 @@ interface CellProps {
 }
 
 const Cell: React.FC<CellProps> = ({hasItem, clicked, onClick}) => {
+  let className = 'cell';
+  if (clicked) {
+    className += ' clicked';
+  }
   return (
     <div
-      className={`cell ${hasItem ? 'has-item' : ''} ${clicked ? 'clicked' : ''}`}
+      className={className}
       onClick={onClick}
-    ></div>
+    >
+      {hasItem && clicked ? '🐶' : ''}
+    </div>
   );
 };
 
