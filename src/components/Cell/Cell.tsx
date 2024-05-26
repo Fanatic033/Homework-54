@@ -10,9 +10,7 @@ interface CellProps {
 const Cell: React.FC<CellProps> = ({hasItem, clicked, onClick}) => {
   return (
     <div
-      className={`cell ${hasItem ? 'has-item' : ''} ${
-        clicked ? 'clicked' : ''
-      }`}
+      className={`cell ${hasItem ? 'has-item' : ''} ${clicked ? 'clicked' : ''}`}
       onClick={onClick}
     ></div>
   );

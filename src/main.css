@@ -1,7 +1,11 @@
 .board {
-  display: grid;
-  grid-template-columns: repeat(6, 0fr);
-  grid-gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  max-width: 330px;
+  margin: 0 auto;
 }
 
 .cell {
@@ -11,9 +15,14 @@
 }
 
 .cell.has-item {
-  background-color: #ff0;
+  background-color: yellow;
 }
 
 .cell.clicked {
-  background-color: #f00;
+  background-color: #ffffff;
+}
+
+.attempts-counter{
+  margin-top: 30px;
+  font-size: 18px;
 }

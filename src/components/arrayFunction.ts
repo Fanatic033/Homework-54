@@ -5,7 +5,7 @@ const createItems = () => {
   }));
 
   const randomIndex = Math.floor(Math.random() * 36);
-  items[randomIndex].clicked = true;
+  items[randomIndex].hasItem = true;
   return items;
 };
 
